@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/main.css">
+    <title>Redesign Steam</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header__body">
+            <div class="header__body-pagination arrow arrow-gray-left arrow-gray-right">
+                <span></span>
+                <span></span>
+            </div>
+            <div class="header__body-image">
+                <img 
+                    src="images/logo.svg" 
+                    alt=""
+                    class="header__body-img"
+                    height="90" width="21" loading="lazy"
+                >
+            </div>
+            <ul class="header__body-list">
+                <li class="header__body-item">
+                    <a href="/" class="header__body-link">STORE</a>
+                </li>
+                <li class="header__body-item">
+                    <a href="/" class="header__body-link">COMMUNITY</a>
+                </li>
+                <li class="header__body-item">
+                    <a href="/" class="header__body-link">NICKNAME</a>
+                </li>
+                <li class="header__body-item">
+                    <a href="/" class="header__body-link">LIBRARY</a>
+                </li>
+                <li class="header__body-item">
+                    <a href="/" class="header__body-link">DOWNLOADS</a>
+                </li>
+            </ul>
+            <div class="header__body-profile">
+                <div class="header__body-friends">
+                    <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_3012_4214)">
+                            <path d="M16.6665 11.4583C18.3957 11.4583 19.7811 10.0625 19.7811 8.33331C19.7811 6.60415 18.3957 5.20831 16.6665 5.20831C14.9373 5.20831 13.5415 6.60415 13.5415 8.33331C13.5415 10.0625 14.9373 11.4583 16.6665 11.4583ZM8.33317 11.4583C10.0623 11.4583 11.4478 10.0625 11.4478 8.33331C11.4478 6.60415 10.0623 5.20831 8.33317 5.20831C6.604 5.20831 5.20817 6.60415 5.20817 8.33331C5.20817 10.0625 6.604 11.4583 8.33317 11.4583ZM8.33317 13.5416C5.90609 13.5416 1.0415 14.7604 1.0415 17.1875V18.75C1.0415 19.3229 1.51025 19.7916 2.08317 19.7916H14.5832C15.1561 19.7916 15.6248 19.3229 15.6248 18.75V17.1875C15.6248 14.7604 10.7603 13.5416 8.33317 13.5416ZM16.6665 13.5416C16.3644 13.5416 16.0207 13.5625 15.6561 13.5937C15.6769 13.6041 15.6873 13.625 15.6978 13.6354C16.8853 14.5 17.7082 15.6562 17.7082 17.1875V18.75C17.7082 19.1146 17.6353 19.4687 17.5207 19.7916H22.9165C23.4894 19.7916 23.9582 19.3229 23.9582 18.75V17.1875C23.9582 14.7604 19.0936 13.5416 16.6665 13.5416Z" fill="#76808C"/>
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_3012_4214">
+                                <rect width="25" height="25" fill="white"/>
+                            </clipPath>
+                        </defs>
+                    </svg>
+                </div>
+                <div class="header__body-bell">
+                    <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_3012_4224)">
+                            <path d="M12.5002 22.9167C13.6461 22.9167 14.5836 21.9792 14.5836 20.8334H10.4169C10.4169 21.9792 11.344 22.9167 12.5002 22.9167ZM18.7502 16.6667V11.4584C18.7502 8.26044 17.0419 5.58335 14.0627 4.87502V4.16669C14.0627 3.3021 13.3648 2.60419 12.5002 2.60419C11.6357 2.60419 10.9377 3.3021 10.9377 4.16669V4.87502C7.94815 5.58335 6.25024 8.25002 6.25024 11.4584V16.6667L4.90649 18.0104C4.25024 18.6667 4.70857 19.7917 5.63565 19.7917H19.3544C20.2815 19.7917 20.7502 18.6667 20.094 18.0104L18.7502 16.6667Z" fill="#76808C"/>
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_3012_4224">
+                                <rect width="25" height="25" fill="white"/>
+                            </clipPath>
+                        </defs>
+                    </svg>
+                </div>
+                <div class="header__body-user">
+                    <div class="header__body-avatar">
+                        <img 
+                            src="images/profile/avatar.jpg" 
+                            alt="" 
+                            class="header__body-photo"
+                            width="31" height="31" loading="lazy"
+                        >
+                    </div>
+                    <div class="header__body-nickname">
+                        <p>Nickname</p>
+                    </div>
+                    <div class="header__body-budget arrow arrow-light-down">
+                        <p>$5.25</p>
+                    </div>
+                    <div class="header__body-droplist__list visually-hidden">
+                        <li class="header__body-droplist__item">
+                            <a href="/" class="header__body-droplist__link">Account Details</a>
+                        </li>
+                        <li class="header__body-droplist__item">
+                            <a href="/" class="header__body-droplist__link">Wallet</a>
+                        </li>
+                        <li class="header__body-droplist__item">
+                            <a href="/" class="header__body-droplist__link">Setting</a>
+                        </li>
+                        <li class="header__body-droplist__item">
+                            <a href="/" class="header__body-droplist__link">Client Updates</a>
+                        </li>
+                        <li class="header__body-droplist__item">
+                            <a href="/" class="header__body-droplist__link">Go Offline</a>
+                        </li>
+                        <li class="header__body-droplist__item">
+                            <a href="/" class="header__body-droplist__link">Change Accout</a>
+                        </li>
+                        <li class="header__body-droplist__item">
+                            <a href="/" class="header__body-droplist__link">Sign Out</a>
+                        </li>
+                        <li class="header__body-droplist__item">
+                            <a href="/" class="header__body-droplist__link">Exit</a>
+                        </li>
+                    </div>
+                </div>
+            </div>
+            <div class="header__body-extra">
+                <div class="header__body-help">
+                    <a href="" class="header__body-help__link">
+                        <p>Help</p>
+                    </a>
+                </div>
+                <div class="header__body-view arrow arrow-gray-down">
+                    <a href="" class="header__body-view__link">
+                        <p>View</p>
+                    </a>
+                </div>
+            </div>
+            <div class="header__body-button">
+                <button 
+                    class="header__body-button__roll roll" 
+                    title="Свернуть"
+                    aria-label="Свернуть"
+                    type="button" >
+                </button>
+
+                <button 
+                    class="header__body-button__copy copy" 
+                    title="Скопировать"
+                    aria-label="Скопировать"
+                    type="button" >
+                </button>
+
+                <button 
+                    class="header__body-button__close close" 
+                    title="Закрыть"
+                    aria-label="Закрыть"
+                    type="button" >
+                </button>
+            </div>
+        </div>
+
+        <div class="header__inner"></div>
+
+        <div class="header__extra"></div>
+
+    </header>
+</body>
+</html>
