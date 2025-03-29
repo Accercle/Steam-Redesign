@@ -1,0 +1,37 @@
+@use 'helpers' as *;
+
+:root {
+    // Цвета
+    --color-light:#F3F3F3;
+    --color-dark:#0E141B;
+
+    --bg-dark-10:#1E2329;
+    --bg-dark-20:#313843;
+
+    --bg-blue-light:#14344B;
+    --bg-blue-dark:#212B45;
+
+    // Рамки
+    --border: ;
+
+    // Шрифты
+    --font-family-base: 'Montserrat', sans-serif;
+
+
+    // Размер макета
+    --container-width: #{rem(1600)} ;//#{rem(1600)};  //Размер секции. Указывается, если они одинаковые. В ином случае, необходимо добавить ещё переменные
+    --container-padding-x: #{rem(25)}; // Внутренние горизонтальные отступы (мобильная версия)
+    // --section-padding-y: // Внутренние отступы по вертикале. Нужно делить на 2, так как паддинг не схлопывается
+    --section-padding-y: #{rem(35)};
+
+    // Поля ввода и кнопки
+    --input-hight: #{rem(45)};
+    --button-height: #{rem(45)};
+
+    // Переход
+    --transition-duration: 0.2s;
+
+    // @include laptop {
+    //     --container-width: ;//#{rem(1600)}; если сетка будет сильно меньше
+    // }
+}
