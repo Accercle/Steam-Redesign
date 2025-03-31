@@ -1,0 +1,11 @@
+@use '../helpers' as *;
+
+.arrow {
+    &--gray-left {
+        background: url('../../icons/gray-arrow-left.svg') center no-repeat;
+    }
+
+    &--gray-right {
+        background: url('../../icons/gray-arrow-right.svg') center no-repeat;
+    }
+}

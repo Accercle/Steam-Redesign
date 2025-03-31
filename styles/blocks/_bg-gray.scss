@@ -1,0 +1,22 @@
+@use '../helpers' as *;
+
+.bg-gray {
+    height: rem(37);
+    width: rem(56);
+    background-color: var(--bg-dark-20);
+
+    @include hover {
+        color: var(--color-yellow);
+        background-color: var(--bg-hover);
+        transition-duration: var(--transition-duration);
+    }
+
+    &--profile {
+        background: var(--bg-dark-20);
+
+        @include hover {
+            background-color: var(--bg-hover);
+            transition-duration: var(--transition-duration);
+        }
+    }
+}

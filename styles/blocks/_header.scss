@@ -1,0 +1,177 @@
+@use '../helpers' as *;
+
+.header {
+    &__body {
+        padding-block: rem(14);
+        background-color: var(--bg-dark-10);
+
+        &--flex {
+            display: flex;
+            align-items: center;
+        }
+
+        &-pagination {
+            position: relative;
+            height: rem(24);
+            width: rem(24);
+            margin-inline: rem(30);
+
+            &::after {
+                @include abs-center;
+
+                content: '';
+                height: rem(24);
+                width: rem(24);
+                margin-left: rem(-20);
+                background: url('../../icons/gray-arrow-left.svg') center no-repeat;
+            }
+        }
+
+        &-logo {
+            padding-right: rem(65);
+        }
+
+        &-img {
+            display: flex;
+
+            @include hover {
+                svg > path {
+                    fill: var(--color-yellow);
+                    transition-duration: var(--transition-duration);
+                }
+            }
+        }
+
+        &-list {
+            display: flex;
+            column-gap: rem(65);
+        }
+
+        &-link {
+            position: relative;
+            text-transform: uppercase;
+
+            @include hover {
+                color: var(--color-yellow);
+                transition-duration: var(--transition-duration);
+
+                &::after {
+                    width: 100%;
+                }
+            }
+
+            &::after { 
+                content: '';
+                position: absolute;
+                top: 100%;
+                left: 50%;
+                translate: -50%;
+                width: 0;
+                height: 2px;
+                background-color: var(--color-yellow);
+                transition-duration: inherit;
+            }
+        }
+
+        &-profile {
+            @include block-center;
+
+            &__user {
+                @include block-center;
+
+                column-gap: rem(7);
+                width: rem(195);
+                height: rem(37);
+
+                &-avatar {
+                    padding-left: rem(3);
+                }
+
+                &-nickname {
+                    @include hover {
+                        color: var(--color-yellow);
+                        transition-duration: var(--transition-duration)
+                    }
+                }
+
+                &-img {
+                    border-radius: var(--border-radius);
+                }
+
+                &-budget {
+                    @include block-center;
+
+                    column-gap: rem(7);
+                    color: var(--color-light-gray);
+
+                    p {
+                        margin: 0;
+                    }
+                }
+
+                &-arrow {
+                    @include block-center;
+
+                    svg > path {
+                        fill: var(--color-light);
+                    }
+                }
+            }
+        }
+
+        &-show {
+
+            &__list {
+                display: flex;
+                align-items: center;
+                column-gap: rem(15);
+            }
+
+            &__item {
+                &:last-child {
+                    padding-right: rem(15);
+                }
+            }
+
+            &__link {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+
+        &-extra {
+            @include block-center;
+            column-gap: rem(17);
+            padding-left: rem(57);
+
+            &__list {
+                @include block-center;
+                column-gap: rem(15);
+            }
+
+            &__item {
+                @include block-center;
+
+                color: var(--color-light-gray);
+
+                @include hover {
+                    color: var(--color-yellow);
+                }
+
+                * > svg > path {
+                    fill: var(--color-light-gray);
+                }
+            }
+
+            &__arrow {
+                @include block-center;
+            }
+        }
+
+        &-button {
+            @include block-center;
+            column-gap: rem(18);
+        }
+    }
+}

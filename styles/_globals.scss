@@ -32,7 +32,7 @@ html {
   h4, .h4,
   h5, .h5,
   h6, .h6 {
-    font-weight: 600;
+    font-weight: 400;
   }
   
   h1, .h1 {
@@ -102,7 +102,7 @@ html {
   
       &::before {
         @include abs-center;
-        @include square(rem(44));
+        @include square(rem(30));
   
         content: '';
       }

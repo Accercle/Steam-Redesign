@@ -27,11 +27,6 @@
 //     }
 // }
 
-// @mixin reset-button {
-//     padding: 0;
-//     background-color: transparent;
-//     border: none;
-// }
 
 @mixin flex-center($isInLine: false) { 
     @if $isInLine {
@@ -49,6 +44,11 @@
     top: 50%;
     left: 50%;
     translate: -50% -50%;
+}
+
+@mixin block-center {
+    display: flex;
+    align-items: center;
 }
 
 @mixin square($size) {
