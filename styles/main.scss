@@ -4,3 +4,12 @@
 @use 'variables';
 @use 'utils';
 @use 'globals';
+
+@use 'blocks/header';
+@use 'blocks/arrow';
+@use 'blocks/grid';
+@use 'blocks/bg-gray';
+@use 'blocks/circle-primary';
+@use 'blocks/icons';
+@use 'blocks/button';
+

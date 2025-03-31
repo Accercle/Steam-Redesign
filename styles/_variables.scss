@@ -4,6 +4,11 @@
     // Цвета
     --color-light:#F3F3F3;
     --color-dark:#0E141B;
+    --color-light-gray: #76808C;
+    --color-yellow: #C1B15F;
+    --color-primary: #66C0F4;
+
+    --bg-hover: #444b57;
 
     --bg-dark-10:#1E2329;
     --bg-dark-20:#313843;
@@ -12,7 +17,8 @@
     --bg-blue-dark:#212B45;
 
     // Рамки
-    --border: ;
+    --border: 1px solid transparent;
+    --border-radius: #{rem(3)};
 
     // Шрифты
     --font-family-base: 'Montserrat', sans-serif;

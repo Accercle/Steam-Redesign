@@ -8,137 +8,210 @@
 </head>
 <body>
     <header class="header">
-        <div class="header__body">
-            <div class="header__body-pagination arrow arrow-gray-left arrow-gray-right">
-                <span></span>
-                <span></span>
-            </div>
-            <div class="header__body-image">
-                <img 
-                    src="images/logo.svg" 
-                    alt=""
-                    class="header__body-img"
-                    height="90" width="21" loading="lazy"
-                >
-            </div>
-            <ul class="header__body-list">
-                <li class="header__body-item">
-                    <a href="/" class="header__body-link">STORE</a>
-                </li>
-                <li class="header__body-item">
-                    <a href="/" class="header__body-link">COMMUNITY</a>
-                </li>
-                <li class="header__body-item">
-                    <a href="/" class="header__body-link">NICKNAME</a>
-                </li>
-                <li class="header__body-item">
-                    <a href="/" class="header__body-link">LIBRARY</a>
-                </li>
-                <li class="header__body-item">
-                    <a href="/" class="header__body-link">DOWNLOADS</a>
-                </li>
-            </ul>
-            <div class="header__body-profile">
-                <div class="header__body-friends">
-                    <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <g clip-path="url(#clip0_3012_4214)">
-                            <path d="M16.6665 11.4583C18.3957 11.4583 19.7811 10.0625 19.7811 8.33331C19.7811 6.60415 18.3957 5.20831 16.6665 5.20831C14.9373 5.20831 13.5415 6.60415 13.5415 8.33331C13.5415 10.0625 14.9373 11.4583 16.6665 11.4583ZM8.33317 11.4583C10.0623 11.4583 11.4478 10.0625 11.4478 8.33331C11.4478 6.60415 10.0623 5.20831 8.33317 5.20831C6.604 5.20831 5.20817 6.60415 5.20817 8.33331C5.20817 10.0625 6.604 11.4583 8.33317 11.4583ZM8.33317 13.5416C5.90609 13.5416 1.0415 14.7604 1.0415 17.1875V18.75C1.0415 19.3229 1.51025 19.7916 2.08317 19.7916H14.5832C15.1561 19.7916 15.6248 19.3229 15.6248 18.75V17.1875C15.6248 14.7604 10.7603 13.5416 8.33317 13.5416ZM16.6665 13.5416C16.3644 13.5416 16.0207 13.5625 15.6561 13.5937C15.6769 13.6041 15.6873 13.625 15.6978 13.6354C16.8853 14.5 17.7082 15.6562 17.7082 17.1875V18.75C17.7082 19.1146 17.6353 19.4687 17.5207 19.7916H22.9165C23.4894 19.7916 23.9582 19.3229 23.9582 18.75V17.1875C23.9582 14.7604 19.0936 13.5416 16.6665 13.5416Z" fill="#76808C"/>
-                        </g>
-                        <defs>
-                            <clipPath id="clip0_3012_4214">
-                                <rect width="25" height="25" fill="white"/>
-                            </clipPath>
-                        </defs>
-                    </svg>
+        <div class="header__body grid--2-column">
+            <div class="header__body--flex">
+                <div class="header__body-pagination arrow arrow--gray-right">
+                    <span></span>
+                    <span></span>
                 </div>
-                <div class="header__body-bell">
-                    <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <g clip-path="url(#clip0_3012_4224)">
-                            <path d="M12.5002 22.9167C13.6461 22.9167 14.5836 21.9792 14.5836 20.8334H10.4169C10.4169 21.9792 11.344 22.9167 12.5002 22.9167ZM18.7502 16.6667V11.4584C18.7502 8.26044 17.0419 5.58335 14.0627 4.87502V4.16669C14.0627 3.3021 13.3648 2.60419 12.5002 2.60419C11.6357 2.60419 10.9377 3.3021 10.9377 4.16669V4.87502C7.94815 5.58335 6.25024 8.25002 6.25024 11.4584V16.6667L4.90649 18.0104C4.25024 18.6667 4.70857 19.7917 5.63565 19.7917H19.3544C20.2815 19.7917 20.7502 18.6667 20.094 18.0104L18.7502 16.6667Z" fill="#76808C"/>
-                        </g>
-                        <defs>
-                            <clipPath id="clip0_3012_4224">
-                                <rect width="25" height="25" fill="white"/>
-                            </clipPath>
-                        </defs>
-                    </svg>
-                </div>
-                <div class="header__body-user">
-                    <div class="header__body-avatar">
-                        <img 
-                            src="images/profile/avatar.jpg" 
-                            alt="" 
-                            class="header__body-photo"
-                            width="31" height="31" loading="lazy"
-                        >
+                <a href="/" class="header__body-logo">
+                    <div class="header__body-img">
+                        <svg  width="88" height="21" viewBox="0 0 88 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10.4581 0C4.9453 0 0.429149 4.25069 0 9.65266L5.62473 11.9782C6.10132 11.6523 6.67708 11.4613 7.29649 11.4613C7.352 11.4613 7.40727 11.4632 7.46207 11.4663L9.96343 7.84069C9.96343 7.82337 9.96319 7.80653 9.96319 7.78945C9.96319 5.60717 11.7384 3.83174 13.9209 3.83174C16.1032 3.83174 17.8784 5.60717 17.8784 7.78945C17.8784 9.97173 16.1032 11.7474 13.9209 11.7474C13.8908 11.7474 13.8609 11.7467 13.831 11.746L10.2635 14.2915C10.2654 14.3377 10.2671 14.3849 10.2671 14.4319C10.2671 16.0702 8.93456 17.4025 7.29649 17.4025C5.85863 17.4025 4.65635 16.3762 4.38401 15.0171L0.361539 13.3542C1.607 17.759 5.65391 20.9885 10.4581 20.9885C16.2541 20.9885 20.9524 16.2899 20.9524 10.4946C20.9524 4.69834 16.2538 0 10.4581 0Z" fill="#F3F3F3"/>
+                            <path d="M6.57622 15.9234L5.28711 15.3909C5.51556 15.8665 5.91079 16.2648 6.43554 16.4835C7.56997 16.9561 8.87782 16.4178 9.35062 15.2825C9.57955 14.7335 9.58097 14.1274 9.35394 13.577C9.12739 13.0264 8.6999 12.597 8.15024 12.3678C7.60485 12.1408 7.02055 12.1491 6.50718 12.3429L7.83876 12.8935C8.67547 13.2423 9.07117 14.2031 8.72244 15.0398C8.37442 15.8767 7.41293 16.2724 6.57622 15.9234Z" fill="#F3F3F3"/>
+                            <path d="M16.5578 7.78939C16.5578 6.33541 15.375 5.15234 13.9207 5.15234C12.4668 5.15234 11.2837 6.33541 11.2837 7.78939C11.2837 9.24361 12.4668 10.4262 13.9207 10.4262C15.375 10.426 16.5578 9.24338 16.5578 7.78939ZM11.9441 7.78489C11.9441 6.69078 12.8311 5.80401 13.9252 5.80401C15.0194 5.80401 15.9064 6.69078 15.9064 7.78489C15.9064 8.87899 15.0194 9.76576 13.9252 9.76576C12.8311 9.76576 11.9441 8.87875 11.9441 7.78489Z" fill="#F3F3F3"/>
+                            <path d="M37.2703 6.28686L36.318 7.9608C35.5844 7.44834 34.5904 7.13989 33.7225 7.13989C32.7307 7.13989 32.117 7.55051 32.117 8.28595C32.117 9.17947 33.2072 9.38734 34.8275 9.96888C36.5692 10.5848 37.5704 11.3087 37.5704 12.9039C37.5704 15.0864 35.854 16.3122 33.3871 16.3122C32.1848 16.3122 30.7345 16.0018 29.6196 15.3236L30.3143 13.4678C31.22 13.9462 32.3034 14.2299 33.2692 14.2299C34.5711 14.2299 35.1899 13.7495 35.1899 13.0395C35.1899 12.2269 34.2463 11.9828 32.723 11.4783C30.9871 10.8987 29.7841 10.1382 29.7841 8.3727C29.7841 6.38164 31.3787 5.23816 33.6731 5.23816C35.2721 5.23816 36.5573 5.74484 37.2703 6.28686Z" fill="#F3F3F3"/>
+                            <path d="M44.7143 7.16142V15.9453H42.472V7.16142H39.2173V5.23816H47.9594V7.16142H44.7143Z" fill="#F3F3F3"/>
+                            <path d="M52.6865 7.15564V9.56823H56.9777V11.4915H52.6865V14.0043H57.6652V15.9453H50.4448V5.23816H57.6652V7.15564H52.6865Z" fill="#F3F3F3"/>
+                            <path d="M62.6697 13.8662L61.9609 15.9453H59.6104L63.6249 5.23816H65.882L70.01 15.9449H67.58L66.8558 13.8659L62.6697 13.8662ZM64.7408 7.79212L63.2786 12.0791H66.2332L64.7408 7.79212Z" fill="#F3F3F3"/>
+                            <path d="M81.5178 9.37674L78.5876 15.6333H77.3223L74.4397 9.43264V15.9453H72.2925V5.23816H74.4349L78.0334 12.9672L81.504 5.23816H83.665V15.9453H81.5181L81.5178 9.37674Z" fill="#F3F3F3"/>
+                            <path d="M87.9999 5.98347C87.9999 6.90366 87.3104 7.47717 86.519 7.47717C85.7248 7.47717 85.0337 6.90366 85.0337 5.98347C85.0337 5.06361 85.7248 4.49396 86.519 4.49396C87.3107 4.49396 87.9999 5.06361 87.9999 5.98347ZM85.2827 5.98347C85.2827 6.75329 85.8373 7.23684 86.519 7.23684C87.1983 7.23684 87.7505 6.75329 87.7505 5.98347C87.7505 5.21141 87.1983 4.73525 86.519 4.73525C85.8392 4.73525 85.2827 5.21719 85.2827 5.98347ZM86.5396 5.22233C86.9235 5.22233 87.0527 5.42539 87.0527 5.64483C87.0527 5.84596 86.9335 5.9809 86.7883 6.04966L87.1324 6.6945H86.8506L86.5605 6.12292H86.2614V6.6945H86.0268V5.22233H86.5396ZM86.2636 5.90733H86.5251C86.6945 5.90733 86.7944 5.80098 86.7944 5.66732C86.7944 5.53238 86.7227 5.44563 86.5245 5.44563H86.2633V5.90733H86.2636Z" fill="#F3F3F3"/>
+                        </svg>
                     </div>
-                    <div class="header__body-nickname">
-                        <p>Nickname</p>
-                    </div>
-                    <div class="header__body-budget arrow arrow-light-down">
-                        <p>$5.25</p>
-                    </div>
-                    <div class="header__body-droplist__list visually-hidden">
-                        <li class="header__body-droplist__item">
-                            <a href="/" class="header__body-droplist__link">Account Details</a>
-                        </li>
-                        <li class="header__body-droplist__item">
-                            <a href="/" class="header__body-droplist__link">Wallet</a>
-                        </li>
-                        <li class="header__body-droplist__item">
-                            <a href="/" class="header__body-droplist__link">Setting</a>
-                        </li>
-                        <li class="header__body-droplist__item">
-                            <a href="/" class="header__body-droplist__link">Client Updates</a>
-                        </li>
-                        <li class="header__body-droplist__item">
-                            <a href="/" class="header__body-droplist__link">Go Offline</a>
-                        </li>
-                        <li class="header__body-droplist__item">
-                            <a href="/" class="header__body-droplist__link">Change Accout</a>
-                        </li>
-                        <li class="header__body-droplist__item">
-                            <a href="/" class="header__body-droplist__link">Sign Out</a>
-                        </li>
-                        <li class="header__body-droplist__item">
-                            <a href="/" class="header__body-droplist__link">Exit</a>
-                        </li>
-                    </div>
-                </div>
+                </a>
+                <ul class="header__body-list">
+                    <li class="header__body-item">
+                        <a href="/" class="header__body-link h3">STORE</a>
+                    </li>
+                    <li class="header__body-item">
+                        <a href="/" class="header__body-link h3">COMMUNITY</a>
+                    </li>
+                    <li class="header__body-item">
+                        <a href="/" class="header__body-link h3">Juxtopposed</a>
+                    </li>
+                    <li class="header__body-item">
+                        <a href="/" class="header__body-link h3">LIBRARY</a>
+                    </li>
+                    <li class="header__body-item">
+                        <a href="/" class="header__body-link h3">DOWNLOADS</a>
+                    </li>
+                </ul>
             </div>
-            <div class="header__body-extra">
-                <div class="header__body-help">
-                    <a href="" class="header__body-help__link">
-                        <p>Help</p>
+            <div class="header__body--flex">
+                <div class="header__body-profile">
+                    <ul class="header__body-show__list">
+                        <li class="header__body-show__item">
+                            <a href="" class="header__body-show__link bg-gray circle-primary">
+                                <span class="visually-hidden">Friends</span>
+                                <div class="icons icons--friends">
+                                    <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_3012_4214)">
+                                            <path d="M16.6665 11.4583C18.3957 11.4583 19.7811 10.0625 19.7811 8.33331C19.7811 6.60415 18.3957 5.20831 16.6665 5.20831C14.9373 5.20831 13.5415 6.60415 13.5415 8.33331C13.5415 10.0625 14.9373 11.4583 16.6665 11.4583ZM8.33317 11.4583C10.0623 11.4583 11.4478 10.0625 11.4478 8.33331C11.4478 6.60415 10.0623 5.20831 8.33317 5.20831C6.604 5.20831 5.20817 6.60415 5.20817 8.33331C5.20817 10.0625 6.604 11.4583 8.33317 11.4583ZM8.33317 13.5416C5.90609 13.5416 1.0415 14.7604 1.0415 17.1875V18.75C1.0415 19.3229 1.51025 19.7916 2.08317 19.7916H14.5832C15.1561 19.7916 15.6248 19.3229 15.6248 18.75V17.1875C15.6248 14.7604 10.7603 13.5416 8.33317 13.5416ZM16.6665 13.5416C16.3644 13.5416 16.0207 13.5625 15.6561 13.5937C15.6769 13.6041 15.6873 13.625 15.6978 13.6354C16.8853 14.5 17.7082 15.6562 17.7082 17.1875V18.75C17.7082 19.1146 17.6353 19.4687 17.5207 19.7916H22.9165C23.4894 19.7916 23.9582 19.3229 23.9582 18.75V17.1875C23.9582 14.7604 19.0936 13.5416 16.6665 13.5416Z" fill="#76808C"/>
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_3012_4214">
+                                                <rect width="25" height="25" fill="white"/>
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                </div>
+                                <span class="circle-count h6">4</span>
+                            </a>
+                        </li>
+                        <li class="header__body-show__item">
+                            <a href="" class="header__body-show__link bg-gray circle-primary">
+                                <span class="visually-hidden">Notification</span>
+                                <div class="icons icons--bell">
+                                    <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_3012_4224)">
+                                            <path d="M12.5002 22.9167C13.6461 22.9167 14.5836 21.9792 14.5836 20.8334H10.4169C10.4169 21.9792 11.344 22.9167 12.5002 22.9167ZM18.7502 16.6667V11.4584C18.7502 8.26044 17.0419 5.58335 14.0627 4.87502V4.16669C14.0627 3.3021 13.3648 2.60419 12.5002 2.60419C11.6357 2.60419 10.9377 3.3021 10.9377 4.16669V4.87502C7.94815 5.58335 6.25024 8.25002 6.25024 11.4584V16.6667L4.90649 18.0104C4.25024 18.6667 4.70857 19.7917 5.63565 19.7917H19.3544C20.2815 19.7917 20.7502 18.6667 20.094 18.0104L18.7502 16.6667Z" fill="#76808C"/>
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_3012_4224">
+                                                <rect width="25" height="25" fill="white"/>
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                </div>
+                                <span class="circle-count h6">1</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <a href="/" class="header__body-profile__user bg-gray--profile">
+                        <div class="header__body-profile__user-avatar">
+                            <img 
+                                src="images/profile/avatar.png" 
+                                alt="" 
+                                class="header__body-profile__user-img"
+                                width="31" height="31" loading="lazy"
+                            >
+                        </div>
+                        <div class="header__body-profile__user-nickname h5">
+                            <p>Juxtopposed</p>
+                        </div>
+                        <div class="header__body-profile__user-budget h5">
+                            <p>$5.25</p>
+                            <div class="header__body-profile__user-arrow">
+                                <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6.76668 8.24167L10 11.475L13.2334 8.24167C13.5584 7.91667 14.0834 7.91667 14.4084 8.24167C14.7334 8.56667 14.7334 9.09167 14.4084 9.41667L10.5834 13.2417C10.2584 13.5667 9.73335 13.5667 9.40835 13.2417L5.58335 9.41667C5.25835 9.09167 5.25835 8.56667 5.58335 8.24167C5.90835 7.92501 6.44168 7.91667 6.76668 8.24167Z" fill="#F3F3F3"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="header__body-profile__user-droplist__list visually-hidden">
+                            <li class="header__body__user-droplist__item">
+                                <a href="/" class="header__body__user-droplist__link">Account Details</a>
+                            </li>
+                            <li class="header__body__user-droplist__item">
+                                <a href="/" class="header__body__user-droplist__link">Wallet</a>
+                            </li>
+                            <li class="header__body__user-droplist__item">
+                                <a href="/" class="header__body__user-droplist__link">Setting</a>
+                            </li>
+                            <li class="header__body__user-droplist__item">
+                                <a href="/" class="header__body__user-droplist__link">Client Updates</a>
+                            </li>
+                            <li class="header__body__user-droplist__item">
+                                <a href="/" class="header__body__user-droplist__link">Go Offline</a>
+                            </li>
+                            <li class="header__body__user-droplist__item">
+                                <a href="/" class="header__body__user-droplist__link">Change Accout</a>
+                            </li>
+                            <li class="header__body__user-droplist__item">
+                                <a href="/" class="header__body__user-droplist__link">Sign Out</a>
+                            </li>
+                            <li class="header__body__user-droplist__item">
+                                <a href="/" class="header__body__user-droplist__link">Exit</a>
+                            </li>
+                        </div>
                     </a>
                 </div>
-                <div class="header__body-view arrow arrow-gray-down">
-                    <a href="" class="header__body-view__link">
-                        <p>View</p>
-                    </a>
+                <div class="header__body-extra">
+                    <ul class="header__body-extra__list">
+                        <li class="header__body-extra__item h4">
+                            <a href="/" class="header__body-extra__link">
+                                Help
+                            </a>
+                        </li>
+                        <li class="header__body-extra__item h4">
+                            <a href="/" class="header__body-extra__link">
+                                View
+                            </a>
+                            <div class="header__body-extra__arrow">
+                                <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6.76668 8.24167L10 11.475L13.2334 8.24167C13.5584 7.91667 14.0834 7.91667 14.4084 8.24167C14.7334 8.56667 14.7334 9.09167 14.4084 9.41667L10.5834 13.2417C10.2584 13.5667 9.73335 13.5667 9.40835 13.2417L5.58335 9.41667C5.25835 9.09167 5.25835 8.56667 5.58335 8.24167C5.90835 7.92501 6.44168 7.91667 6.76668 8.24167Z" fill="#F3F3F3"/>
+                                </svg>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="header__body-button">
+                        <div class="header__body-button__roll">
+                        <button
+                            class="button"
+                            title="Свернуть"
+                            aria-label="Свернуть"
+                            type="button" >
+                        </button>
+                        <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_3012_4175)">
+                            <path d="M7.29167 11.6264H17.7083C18.2812 11.6264 18.75 12.0952 18.75 12.6681C18.75 13.241 18.2812 13.7097 17.7083 13.7097H7.29167C6.71875 13.7097 6.25 13.241 6.25 12.6681C6.25 12.0952 6.71875 11.6264 7.29167 11.6264Z" fill="#76808C"/>
+                            </g>
+                            <defs>
+                            <clipPath id="clip0_3012_4175">
+                            <rect width="25" height="25" fill="white"/>
+                            </clipPath>
+                            </defs>
+                        </svg>
+                        </div>
+
+                        <div class="header__body-button__copy">
+                            <button 
+                                class="button" 
+                                title="Скопировать"
+                                aria-label="Скопировать"
+                                type="button" >
+                            </button>
+                            <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_3012_4178)">
+                                    <path d="M8.31931 5.05627H19.9344C21.0959 5.05627 21.3423 5.68301 21.3423 6.44903V15.5019C21.3423 15.8849 21.2191 16.3497 20.6383 16.3497C20.0576 16.3497 19.9344 15.8849 19.9344 15.5019V7.1454C19.9344 6.7624 19.4593 6.44903 18.8785 6.44903H8.31931C7.73856 6.44903 7.2634 6.13566 7.2634 5.75265C7.2634 5.36964 7.73856 5.05627 8.31931 5.05627ZM5.15158 7.84181H16.7667C17.9282 7.84181 18.5265 8.46855 18.5265 9.23456V18.9838C18.5265 19.7498 17.9282 20.3766 16.7667 20.3766H5.15158C3.99006 20.3766 3.74364 19.7498 3.74364 18.9838V9.23456C3.74364 8.46855 3.99006 7.84181 5.15158 7.84181ZM6.20749 18.9838H15.7108C16.2915 18.9838 16.7667 18.6705 16.7667 18.2875V9.93094C16.7667 9.54793 16.2915 9.23456 15.7108 9.23456H6.20749C5.62674 9.23456 5.15158 9.54793 5.15158 9.93094V18.2875C5.15158 18.6705 5.62674 18.9838 6.20749 18.9838Z" fill="#76808C"/>
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_3012_4178">
+                                        <rect width="25" height="25" fill="white" transform="matrix(-1 0 0 1 25 0)"/>
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </div>
+                        
+                        <div class="header__body-button__close">
+                            <button 
+                                class="button"
+                                title="Закрыть"
+                                aria-label="Закрыть"
+                                type="button" >
+                            </button>
+                            <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_3012_4181)">
+                                    <path d="M19.0625 5.94786C18.6562 5.54161 18 5.54161 17.5937 5.94786L12.5 11.0312L7.40625 5.93744C7 5.53119 6.34375 5.53119 5.9375 5.93744C5.53125 6.34369 5.53125 6.99994 5.9375 7.40619L11.0312 12.4999L5.9375 17.5937C5.53125 17.9999 5.53125 18.6562 5.9375 19.0624C6.34375 19.4687 7 19.4687 7.40625 19.0624L12.5 13.9687L17.5937 19.0624C18 19.4687 18.6562 19.4687 19.0625 19.0624C19.4687 18.6562 19.4687 17.9999 19.0625 17.5937L13.9687 12.4999L19.0625 7.40619C19.4583 7.01036 19.4583 6.34369 19.0625 5.94786Z" fill="#76808C"/>
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_3012_4181">
+                                        <rect width="25" height="25" fill="white"/>
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="header__body-button">
-                <button 
-                    class="header__body-button__roll roll" 
-                    title="Свернуть"
-                    aria-label="Свернуть"
-                    type="button" >
-                </button>
-
-                <button 
-                    class="header__body-button__copy copy" 
-                    title="Скопировать"
-                    aria-label="Скопировать"
-                    type="button" >
-                </button>
-
-                <button 
-                    class="header__body-button__close close" 
-                    title="Закрыть"
-                    aria-label="Закрыть"
-                    type="button" >
-                </button>
             </div>
         </div>
 
