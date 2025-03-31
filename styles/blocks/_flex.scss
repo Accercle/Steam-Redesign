@@ -1,0 +1,17 @@
+@use '../helpers' as *;
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+    padding-inline: rem(30);
+
+    @include laptop {
+        padding-inline: rem(15);
+    }
+
+    @include mobile {
+        justify-content: center;
+        flex-direction: column;
+        row-gap: rem(10);
+    }
+}

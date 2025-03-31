@@ -8,27 +8,32 @@
         &--flex {
             display: flex;
             align-items: center;
-        }
 
-        &-pagination {
-            position: relative;
-            height: rem(24);
-            width: rem(24);
-            margin-inline: rem(30);
+            @include tablet {
+                flex-wrap: wrap;
+                justify-content: center;
+                row-gap: rem(7);
+            }
 
-            &::after {
-                @include abs-center;
-
-                content: '';
-                height: rem(24);
-                width: rem(24);
-                margin-left: rem(-20);
-                background: url('../../icons/gray-arrow-left.svg') center no-repeat;
+            @include mobile {
+                justify-content: center;
+                flex-direction: column;
+                row-gap: rem(7);
             }
         }
 
         &-logo {
-            padding-right: rem(65);
+            @include laptop-above {
+                padding-right: rem(50);
+            }
+
+            @include laptop {
+                padding-right: rem(25);
+            }
+
+            @include tablet {
+                padding: 0;
+            }
         }
 
         &-img {
@@ -44,7 +49,29 @@
 
         &-list {
             display: flex;
-            column-gap: rem(65);
+            
+            @include laptop-above {
+                column-gap: rem(65);
+            }
+
+            @include laptop {
+                flex-wrap: wrap;
+                justify-content: center;
+                column-gap: rem(15);
+                padding-right: rem(8);
+            }
+
+            @include mobile {
+                flex-direction: column;
+                padding: 0;
+            }
+        }
+
+        &-item {
+            @include mobile {
+                display: flex;
+                justify-content: center;
+            }
         }
 
         &-link {
@@ -76,15 +103,37 @@
         &-profile {
             @include block-center;
 
+            @include mobile {
+                flex-direction: column;
+                row-gap: rem(10);
+            }
+
             &__user {
                 @include block-center;
 
                 column-gap: rem(7);
-                width: rem(195);
-                height: rem(37);
+
+                @include laptop-above {
+                    width: rem(195);
+                    height: rem(37);
+                }
+
+                @include laptop {
+                    width: rem(185);
+                    height: rem(33);
+                }
 
                 &-avatar {
                     padding-left: rem(3);
+
+                    @include tablet-above {
+                        width: rem(28);
+                        height: rem(28);
+                    }
+
+                    @include laptop {
+                        @include block-center;
+                    }
                 }
 
                 &-nickname {
@@ -96,6 +145,11 @@
 
                 &-img {
                     border-radius: var(--border-radius);
+
+                    @include laptop {
+                        width: rem(28);
+                        height: rem(28);
+                    }
                 }
 
                 &-budget {
@@ -125,12 +179,17 @@
                 display: flex;
                 align-items: center;
                 column-gap: rem(15);
+
+                @include mobile {
+                    order: 1;
+                }
             }
 
             &__item {
                 &:last-child {
                     padding-right: rem(15);
                 }
+
             }
 
             &__link {
@@ -143,7 +202,12 @@
         &-extra {
             @include block-center;
             column-gap: rem(17);
-            padding-left: rem(57);
+            padding-left: rem(30);
+
+            @include laptop {
+                padding-left: rem(15);
+                column-gap: rem(10);
+            }
 
             &__list {
                 @include block-center;
@@ -167,11 +231,29 @@
             &__arrow {
                 @include block-center;
             }
-        }
 
-        &-button {
-            @include block-center;
-            column-gap: rem(18);
+            &__button {
+                &-list {
+                    @include block-center;
+                    column-gap: rem(18);
+
+                    @include tablet-above {
+                        column-gap: rem(10);
+                    }
+                }
+
+                &-item {
+                    @include block-center;
+                    cursor: pointer;
+
+                    @include hover {
+                        svg > g > path {
+                            fill: var(--color-yellow);
+                            transition-duration: var(--transition-duration);
+                        }
+                    }
+                }
+            }
         }
     }
 }

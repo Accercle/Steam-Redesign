@@ -6,6 +6,10 @@
     left: 30%;
     translate: -50% -50%;
 
+    @include laptop {
+        top: 60%;
+    }
+
     & * > svg {
         @include hover {
             fill: var(--color-yellow);

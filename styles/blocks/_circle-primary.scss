@@ -23,5 +23,10 @@
         top: -50%;
         right: -24%;
         color: var(--color-dark);
+
+        @include laptop {
+            top: -44%;
+            right: -18%;
+        }
     }
 }

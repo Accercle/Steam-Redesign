@@ -5,6 +5,11 @@
     width: rem(56);
     background-color: var(--bg-dark-20);
 
+    @include laptop {
+        width: rem(50);
+        height: rem(30);
+    }
+
     @include hover {
         color: var(--color-yellow);
         background-color: var(--bg-hover);
